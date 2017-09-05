@@ -3,6 +3,9 @@ package array;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by hao on 17-9-2.
+ */
 public class L01_TwoSum {
 
     public static void main(String[] args) {
@@ -15,6 +18,10 @@ public class L01_TwoSum {
 
 
     public static int[] twoSum(int[] array, int target) {
+
+        if (array == null || array.length < 2) {
+            return new int[2];
+        }
 
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for(int i=0; i < array.length; i++) {
